@@ -1,0 +1,32 @@
+
+.vh-100 {
+    height: 100vh;
+}
+
+.carousel-custom {
+    min-height: 100px;
+}
+
+.carousel-custom figure {
+    background-color: #000000;
+}
+
+.carousel-custom img {
+    opacity: .4;
+}
+
+.btn-login, .btn-google, .btn-facebook {
+    color: #ffffff;
+}
+
+.btn-login {
+    background-color: #2f721e;
+}
+
+.btn-facebook, .bg-facebook {
+    background-color: #3b5998;
+}
+
+.btn-google {
+    background-color: #DD4B39;
+}

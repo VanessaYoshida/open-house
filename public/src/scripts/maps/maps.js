@@ -1,3 +1,9 @@
+const url = "https://geocoder.api.here.com/6.2/geocode.json?app_id=A0an0Cy4CF1jmmOCpGBb&app_code=wIc8MPsnN0Ujx0gceJFuSg&searchtext=425+W+Randolph+Chicago";
+
+fetch (url)
+.then (response => response.json())
+.then (response => console.log(response));
+
 document.getElementById("send-address").addEventListener("click", function( event ) {
     geocode(platform);
 }, false);
@@ -25,6 +31,16 @@ function geocode(platform) {
     
     function onError(error) {
         alert('Ooops!');
+    }
+
+    function searchPlaces(platform) {
+        var search = new H.places.Search(platform.getPlacesService());
+
+        var params = {
+            'q': 'quadras',
+            'at': '-23.5505,-46.6333'
+        };
+        search.request(params, {}, onResult, onError);
     }
     
     var platform = new H.service.Platform({
