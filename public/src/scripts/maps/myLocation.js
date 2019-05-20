@@ -10,7 +10,7 @@ document.getElementById("send-address").addEventListener("click", function( even
 
 function geocode(platform) {
     const address = document.getElementById('address').value;
-    var geocoder = platform.getGeocodingService(),
+    const geocoder = platform.getGeocodingService(),
     geocodingParameters = {
         searchText: address,
         jsonattributes : 1
@@ -24,7 +24,7 @@ function geocode(platform) {
     }
 
     function onSuccess(result) {
-        var locations = result.response.view[0].result;
+        const locations = result.response.view[0].result;
         addLocationsToMap(locations);
         addLocationsToPanel(locations);
     }
@@ -34,37 +34,37 @@ function geocode(platform) {
     }
 
     function searchPlaces(platform) {
-        var search = new H.places.Search(platform.getPlacesService());
+        const search = new H.places.Search(platform.getPlacesService());
 
-        var params = {
+        const params = {
             'q': 'quadras',
             'at': '-23.5505,-46.6333'
         };
         search.request(params, {}, onResult, onError);
     }
     
-    var platform = new H.service.Platform({
+    const platform = new H.service.Platform({
         app_id: 'A0an0Cy4CF1jmmOCpGBb',
         app_code: 'wIc8MPsnN0Ujx0gceJFuSg',
         useHTTPS: true,
         useCIT: true
     });
     
-    var defaultLayers = platform.createDefaultLayers();
+    const defaultLayers = platform.createDefaultLayers();
     
-    var map = new H.Map(document.getElementById('map'),
+    const map = new H.Map(document.getElementById('map'),
     defaultLayers.normal.map,{
         center: {lat:-23.5505, lng:-46.6333},
         zoom: 15
     });
     
-    var locationsContainer = document.getElementById('panel');
+    const locationsContainer = document.getElementById('panel');
     
-    var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+    const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
     
-    var ui = H.ui.UI.createDefault(map, defaultLayers);
+    const ui = H.ui.UI.createDefault(map, defaultLayers);
     
-    var bubble;
+    let bubble;
     
     function openBubble(position, text){
         if(!bubble){
@@ -81,7 +81,7 @@ function geocode(platform) {
         
         function addLocationsToPanel(locations){
             
-            var nodeOL = document.createElement('ul'),
+            let nodeOL = document.createElement('ul'),
             i;
             
             nodeOL.style.fontSize = 'small';
@@ -90,7 +90,7 @@ function geocode(platform) {
             
             
             for (i = 0;  i < locations.length; i += 1) {
-                var li = document.createElement('li'),
+                let li = document.createElement('li'),
                 divLabel = document.createElement('div'),
                 address = locations[i].location.address,
                 content =  '<strong style="font-size: large;">' + address.label  + '</strong></br>';
@@ -120,7 +120,7 @@ function geocode(platform) {
         }
         
         function addLocationsToMap(locations){
-            var group = new  H.map.Group(),
+            let group = new  H.map.Group(),
             position,
             i;
             
