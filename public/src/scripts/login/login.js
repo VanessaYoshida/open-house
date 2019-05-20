@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $("#login-form").submit((event) => {
+
+  function login (event) {
     event.preventDefault();
     
     let email = $("#user-email").val();
@@ -7,7 +8,7 @@ $(document).ready(function() {
     
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then((response) => {
-      window.location = "post.html?id=" + response.user.uid;
+      window.location = `places.html?id=${response.user.uid}`;
     })
     .catch(() => {
       if (email === ""){
@@ -23,8 +24,10 @@ $(document).ready(function() {
       } else {
         $("#invalid-email-password").html("E-mail ou senha inválidos.");
       }
-    });          
-  })
+    });   
+  }
+
+  $("#enter-button").click(login);
   
   $("#forget-password").click(() => {
     window.location = "password.html"
