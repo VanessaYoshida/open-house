@@ -30,3 +30,13 @@
 .btn-google {
     background-color: #DD4B39;
 }
+
+.map {
+    width: 600px; 
+    height: 400px; 
+    background: grey;
+}
+
+.panel {
+    width: 600px;
+}
