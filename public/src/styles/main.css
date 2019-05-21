@@ -1,26 +1,9 @@
-
-.vh-100 {
-    height: 100vh;
-}
-
-.carousel-custom {
-    min-height: 100px;
-}
-
-.carousel-custom figure {
-    background-color: #000000;
+*{
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 .carousel-custom img {
-    opacity: .4;
-}
-
-.btn-login {
-    color: #ffffff;
-}
-
-.btn-login {
-    background-color: #363636;
+    opacity: .8;
 }
 
 .map {
@@ -34,7 +17,7 @@
 }
 
 .img-logo{
-    width: 30%; 
+    width: 40%; 
     height: 100%;
 }
 
@@ -42,4 +25,6 @@
     text-align: center;
 }
 
-
+.btn-logout{
+    margin: 1%;
+}

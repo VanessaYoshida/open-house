@@ -7,17 +7,15 @@
     <title>Quadras Esportivas</title>
     <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css" />
     <link rel="stylesheet" href="./src/styles/main.css" />
-
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-places.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -34,13 +32,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Servicos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
                     </li>
                 </ul>
             </div>
@@ -53,16 +51,17 @@
 
     <h3 class="title-principal">Encontre as Quadras Esportivas mais proximas de você</h3>
 
-
     <p id="demo"></p>
     <label>Digite o endereço da sua localizacao:</label>
     <input type="text" id="address"  class="form-control" placeholder="Ex: Rua Sao Paulo, 15">
-    <button id="send-address" class="btn btn-primary mb-2" >Buscar</button>
+
+    <button type="button" class="btn btn-dark btn-block my-3 " id="send-address">Buscar</button>
+    
+
     <div id="map" class="map"></div>
     <div id="panel" class="panel"></div>
 
-    <button id= "exit" class= "btn btn-light btn-block">Sair</button>
-    
+    <button id= "exit" class= "btn btn-dark btn-logout">Sair</button>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
