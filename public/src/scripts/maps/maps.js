@@ -128,3 +128,16 @@ function geocode(platform) {
                 map.setCenter(group.getBounds().getCenter());
         }
             
+//botao de logout
+        $(document).ready(function () {
+
+            $("#exit").click(function (event) {
+                event.preventDefault();
+        
+                firebase.auth().signOut().then(function() {
+                    window.location = 'index.html';
+                }).catch(function(error) {
+                    alert("Erro: " + error);
+                });
+            });
+        });
