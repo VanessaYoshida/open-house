@@ -4,6 +4,7 @@ document.getElementById("send-address").addEventListener("click", function( even
 
 function geocode(platform) {
     const address = document.getElementById('address').value;
+    
     var geocoder = platform.getGeocodingService(),
     geocodingParameters = {
         searchText: address,
@@ -21,6 +22,7 @@ function geocode(platform) {
         var locations = result.response.view[0].result;
         addLocationsToMap(locations);
         addLocationsToPanel(locations);
+        showPlaces(localStorage.getItem("latitude"), localStorage.getItem("longitude"));
     }
     
     function onError(error) {
@@ -36,11 +38,22 @@ function geocode(platform) {
     
     var defaultLayers = platform.createDefaultLayers();
     
+    
+    // var map = new H.Map(document.getElementById('map'),
+    // defaultLayers.normal.map,{
+    //     center: {lat: -23.5505, lng: -46.6333},
+    //     zoom: 15
+    // });
+    
+    
     var map = new H.Map(document.getElementById('map'),
     defaultLayers.normal.map,{
-        center: {lat:-23.5505, lng:-46.6333},
+        center: {lat: localStorage.getItem("latitude"), lng:localStorage.getItem("longitude")},
         zoom: 15
     });
+    
+    
+    
     
     var locationsContainer = document.getElementById('panel');
     
@@ -126,5 +139,4 @@ function geocode(platform) {
                 
                 map.addObject(group);
                 map.setCenter(group.getBounds().getCenter());
-        }
-            
+            }
