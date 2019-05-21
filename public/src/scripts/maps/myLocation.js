@@ -9,11 +9,11 @@ const getLocation = () => {
 }
 
 const showPosition = (position) => {
-    const myLocation = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-}
-    localStorage.setItem(myLocation)
+    const lat = position.coords.latitude;
+    const lng = position.coords.longitude;
+
+    localStorage.setItem("latitude", lat);
+    localStorage.setItem("longitude", lng);
 }
 
 getLocation();

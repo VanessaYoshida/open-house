@@ -6,6 +6,7 @@
     <meta name="description" content="Request a location using a free-form text input and display it on the map.">
     <title>Quadras Esportivas</title>
     <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
@@ -19,8 +20,9 @@
     <label>Digite o endereço</label>
     <input type="text" id="address" placeholder="Digite o seu endereço aqui">
     <button id="send-address">Enviar</button>
-    <div id="map" style="width: 600px; height: 400px; background: grey"></div>
-    <div id="panel" style="width: 600px;"></div>
+    <div id="map" class="map"></div>
+    <div id="panel" class="panel"></div>
+    <script type="text/javascript" src='./src/scripts/maps/maps.js'></script>
     <script type="text/javascript" src='./src/scripts/maps/myLocation.js'></script>
     <script type="text/javascript" src='./src/scripts/maps/findCourts.js'></script>
 </body>
