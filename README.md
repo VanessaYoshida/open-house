@@ -1,80 +1,85 @@
 # Projeto Open House
-O Lets Play é um projeto proposto pela Laboratória com o intuito de seguir as seguintes tarefas:
-* UX: Aprofundamento dos conhecimentos de UX
-* Internet: Aprender como é o funcionamento da internet, o que são e pra que servem (alguns) protocolos,como funciona a comunicação cliente-servidor e como fazer requisições.
-* API REST: Descobrir como utilizar APIs, com exemplos práticos utilizando a API de Geolocalização Here. 
-* HTML5 API: Criar um site, pegue gifs da API do​​Giphy​ e faça​​Swipe​ deles.
-* Agilidade: Recapitulação dos conceitos de agilidade, como criar um projeto-base para começar um projeto, o que são e para que servem alguns rituais/ferramentas de scrum e kanban.
+## App de Busca de Quadras Esportivas #PartiuJogar
 
-[Site](https://www.google.com/)
+### Descrição da Aplicação
+* Criar um produto de entretenimento utilizando APIs externas.
+* UX: Aprofundamento dos conhecimentos de UX
+* Internet: Aprender como é o funcionamento da internet, o que são e pra que servem (alguns) protocolos, como funciona a comunicação cliente-servidor e como fazer requisições.
+* API REST: Descobrir como utilizar APIs, com exemplos práticos utilizando a API de Geolocalização Here. 
+* Agilidade: Recapitulação dos conceitos de agilidade, como criar um projeto-base, o que são e para que servem alguns rituais/ferramentas de scrum e kanban.
+
 
 ## Índice
 
-* [Resumo do Projeto](#Resumo-do-Projeto)
 * [Linguagem de programação](#Linguagem-de-programação)
 * [Autoria](#Autoria)
 * [Definição do Produto](#Definição-do-produto)
 * [Histórias de Usuários](#Histórias-de-Usuários)
+* [Concorrência](#Concorrência)
+* [Entrevistas com Usuários](#Entrevistas-com-Usuários)
 * [Personas](#Personas)
-* [Organização](#Organização)
 * [Protótipo](#Protótipo)
-* [Desenho da interface do Usuário](#Desenho-da-interface-do-Usuário)
 * [Teste de Usabilidade](#Teste-de-usabilidade)
+* [Business Model Canvas](#Business-Model-Canvas)
 
-# Resumo do Projeto
-O Lets Play faz .... 
-Criar um produto de entretenimento utilizando APIs externas. 
 
-* [Linguagem de programação](#Linguagem-de-programação)
+### Linguagem de Programação
 Essa página foi desenvolvida em JavaScript (ES6+), HTML e CSS.
 Foi utilizado o Framework Bootstrap v4, foi consumido a API Here e foi utilizado o banco de dados Firebase.
+
 
 ## Autoria
 O projeto foi desenvolvido por: **Amanda**, **Fabiane Albuquerque**, **Laiz Araújo**, **Maria Eduarda**, **Tatiane Tabata** e **Vanessa Yoshida**.
 
-# Definição do Produto
-## Histórias de Usuários
 
-Eu como usuário preciso conseguir encontrar as quadras mais próximas para jogar futebol, porque nem todas as quadras estão na internet.
-*Solução:* Usaremos a API de Geolocalização para poder encontrar as quadras mais próximas.
+### Roadmap do projeto
+## Definição do Produto
+Para a definição do App #PartiuJogar foram respondidas as seguintes perguntas:
 
-Preciso conseguir agendar online que vou utilizar a quadra, porque não quero ter que me deslocar até lá só pra agendar.
-*Solução:* Usaremos a API de agenda para conseguir requisitar uma data ao proprietário da quadra.
+1. App onde os usuários possam encontrar locais para pratica de esportes. O usuário poderá encontrar através de uma API de localização lugares próximos ou que tenha um esporte específico, conhecer melhor o lugar através de fotos 360° e agendar online.
+* Localização
+* Estado em que a quadra se encontra
+* Preços
+* Agenda com datas disponíveis
+* Estacionamento
+* Vestiários
+* Lanchonete/Espaço para churrasco
 
-Preciso conseguir pagar o agendamento antecipado sem precisar ir pessoalmente, porque não tenho tempo pra ir até lá só pra fazer isso.
-*Solução:* Usaremos um aplicativo de banco para efetuar o pagamento.
+Para as quadras cadastradas será prestado serviço de divulgação com fotos da local em 360°, espaço para avaliação, controle de agendamento e pagamento. 
 
-Gostaria de ver fotos do local para ver se gosto da quadra de futebol.
-*Solução:* Faremos fotos 3D dos locais parceiros para o usuário poder conhecer a quadra sem precisar se deslocar.
+2. Para a versão 2 os usuários poderão sugerir suas quadras para o app oferecer seus serviços.
 
-Eu preciso ver um mapa da localização para saber onde fica a quadra porque não sei onde é exatamente.
-*Solução:* API de Geolocalização.
+3. Para essa versão fazer métodos de criação de times.
 
-Se a quadra de futebol que agendei é sem cobertura e acabar chovendo no dia, quero poder reagendar para outra data.
-*Solução:* Permitir reagendar com a permissão do administrador.
 
-Eu quero pacotes com desconto pra pagar mensalmente o uso da quadra.
-*Verificar/Solução:* Conversar com proprietário da quadra ver se ele permite.
+### Histórias de usuário
+![Pesquisa](https://drive.google.com/file/d/1_itpfioPYtlCzApJET9rtqVor4NtMgkr/view?usp=sharing)
 
-Eu gostaria de encontrar quadras de vôlei perto da minha casa.
-*Solução:* API de Geolocalização.
 
-Eu preciso me juntar a algum time, porque meus amigos não gostam de futebol. 
-*Solução:* Para uma próxima versão fazer métodos de criação de times.
+### Concorrência
+Na busca por “quadras para alugar” retorna os sites das próprias quadras. Nesse caso o usuário necessita entrar em site por site para conhecer o local.
+Para sites de busca foi encontrado o Guia Mais e Sampa Online porem eles não tem opção de agendamento online.
 
-Eu quero poder marcar a quantidade de amigos que vão jogar comigo, para poder montar o meu time. 
-*Solução:* Gravar no agendamento a quantidade de jogadores no time de quem está agendando.
 
-Tenho um time formado, e gostaria de jogar contra outro time. 
-*Solução:* Para uma próxima versão fazer métodos de criação de times.
+### Entrevistas com Usuários
+Na entrevista realizada com usuários foi mostrado que gostariam de um app para buscar quadras, ver o local com foto 360, saber as comodidades que tem no estabelecimento e poder agendar online.
+![Pesquisa](https://docs.google.com/forms/d/e/1FAIpQLSdNR0QVOVZQO2rQiDewZl7AqkBtdxUucZGncY8ZsVqKxOrDWQ/viewform)
+![Pesquisa](.assets/img/pesquisa1.jpeg)
+![Pesquisa](.assets/img/pesquisa2.jpeg)
 
-## Personas
-![persona](/public/assets/img/PersonaPatricia.png)
 
-## Organização
+### Personas
+![Link das Personas](https://docs.google.com/document/d/19DyEV91pZXRt7bac0e5ksczo1137NNXxZwSPdtOLdY8/edit)
+
 
 ## Protótipo
+![Link do Protótipo]()
 
-## Desenho da interface do Usuário
 
-## Teste de Usabilidade
+### Testes de Usabilidade
+Foi feito um protótipo de baixa fidelidade para a primeira versão do projeto e os testes de usuário deram como satisfatórios para pesquisar a quadra e agendar online.
+[Link do Teste de Usabilidade](https://xd.adobe.com/view/a492e102-86c5-49ab-7b8f-bacf65139054-d2a3/?fullscreen)
+
+
+### Business Model Canvas
+![Business Mdel Canvas](https://canvanizer.com/canvas/wk5XSOxgCVI6F)
