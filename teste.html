@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Here API</title>
     <!-- here -->
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-places.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.hereapi.cn/v3/3.0/mapsjs-ui.css" />
+    <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
 </head>
 
 <body>
     <h1>Mapa:</h1>
+    <input type="text" id="address">
+    <button id="src-address">Procurar</button>
 
-    <div id="demo"></div>
-
-    <div id="map" style="width: 600px; height: 400px; background: grey"></div>
+    <div id="map" ></div>
     <script type="text/javascript" src='teste.js'></script>
 </body>
 
+</html>
 </html>

@@ -4,10 +4,9 @@ window.onload = function () {
 
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showSP);
-    }
-    else {
-        x.innerHTML = "Seu browser não suporta Geolocalização.";
+        navigator.geolocation.getCurrentPosition(showPosition, errorPosition)
+    } else {
+        showMap(-23.5507, -46.6333);
     }
 }
 
@@ -15,28 +14,33 @@ function showPosition(position) {
     showMap(position.coords.latitude, position.coords.longitude)
 }
 
-function showSP(error) {
+function errorPosition(error) {
     showMap(-23.5507, -46.6333)
 }
 
-const idapi = '0FuHpdUPSk8DjovzG8a3';
-const codapi = '6YNHGglOpSTAE513hPercA';
-
-const platform = new H.service.Platform({
-    'app_id': idapi,
-    'app_code': codapi
+let platform = new H.service.Platform({
+    'app_id': '0FuHpdUPSk8DjovzG8a3',
+    'app_code': '6YNHGglOpSTAE513hPercA',
+    useHTTPS: true,
+    useCIT: true
 });
 
-// Obtain the default map types from the platform object:
-const defaultLayers = platform.createDefaultLayers();
+let defaultLayers = platform.createDefaultLayers();
 
-// Instantiate (and display) a map object:
-function showMap(latitude, longitude){
-    const map = new H.Map(
+const showMap = function (latitude, longitude) {
+    var map = new H.Map(
         document.getElementById('map'),
         defaultLayers.normal.map,
         {
-            zoom: 14,
-            center: { lat: latitude, lng: longitude}
+            zoom: 15,
+            center: { lat: latitude, lng: longitude }
         });
+
+    let mapEvents = new H.mapevents.MapEvents(map);
+    let behavior = new H.mapevents.Behavior(mapEvents);
+    let ui = H.ui.UI.createDefault(map, defaultLayers);
+    window.marker = new H.map.Marker({ lat: latitude, lng: longitude });
+    map.addObject(marker);
 }
+
+
