@@ -42,14 +42,14 @@ function geocode(platform) {
     // var map = new H.Map(document.getElementById('map'),
     // defaultLayers.normal.map,{
     //     center: {lat: -23.5505, lng: -46.6333},
-    //     zoom: 15
+    //     zoom: 14
     // });
     
     
     var map = new H.Map(document.getElementById('map'),
     defaultLayers.normal.map,{
         center: {lat: localStorage.getItem("latitude"), lng:localStorage.getItem("longitude")},
-        zoom: 15
+        zoom: 14
     });
     
     
