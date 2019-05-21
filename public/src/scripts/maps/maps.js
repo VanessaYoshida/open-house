@@ -139,4 +139,17 @@ function geocode(platform) {
                 
                 map.addObject(group);
                 map.setCenter(group.getBounds().getCenter());
-            }
+        }
+            
+//botao de logout
+let database = firebase.database();
+
+$("#exit").click(function (event) {
+    event.preventDefault();
+    firebase.auth().signOut().then(function () {
+      window.location = 'index.html';
+    }).catch(function (error) {
+      alert("Erro: " + error);
+    });
+  });
+}
