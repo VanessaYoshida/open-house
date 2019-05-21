@@ -129,15 +129,13 @@ function geocode(platform) {
         }
             
 //botao de logout
-        $(document).ready(function () {
+let database = firebase.database();
 
-            $("#exit").click(function (event) {
-                event.preventDefault();
-        
-                firebase.auth().signOut().then(function() {
-                    window.location = 'index.html';
-                }).catch(function(error) {
-                    alert("Erro: " + error);
-                });
-            });
-        });
+$("#exit").click(function (event) {
+    event.preventDefault();
+    firebase.auth().signOut().then(function () {
+      window.location = 'index.html';
+    }).catch(function (error) {
+      alert("Erro: " + error);
+    });
+  });
