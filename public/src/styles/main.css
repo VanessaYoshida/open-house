@@ -17,7 +17,7 @@
 }
 
 .img-logo{
-    width: 40%; 
+    width: 38%; 
     height: 100%;
 }
 
@@ -25,4 +25,20 @@
     text-align: center;
 }
 
+.container-quadras{
+    text-align: center;
+    margin-top: 8%;
+}
 
+.nav-top{
+    text-align: right;
+}
+
+<<<<<<< HEAD
+li{
+    margin: 2%;
+    color: #343a40;
+    list-style-type: none;
+}
+=======
+>>>>>>> e334e72ecbbc04bfb141e308845414ef6abc2048
