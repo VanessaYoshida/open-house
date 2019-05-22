@@ -135,8 +135,6 @@ let geocode = (platform) => {
                 map.setCenter(group.getBounds().getCenter());
             }
             
-            let database = firebase.database();
-            
             $("#exit").click((event) => {
                 event.preventDefault();
                 firebase.auth().signOut().then(() =>{
