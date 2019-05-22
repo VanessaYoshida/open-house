@@ -1,5 +1,5 @@
 # Projeto Open House
-## App de Busca de Quadras Esportivas #PartilJogar
+## App de Busca de Quadras Esportivas #PartiuJogar
 
 ### Descrição da Aplicação
 * Criar um produto de entretenimento utilizando APIs externas.
