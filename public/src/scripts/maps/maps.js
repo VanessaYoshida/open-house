@@ -1,4 +1,6 @@
-$("#send-address").click(() => geocode(platform));
+document.getElementById("send-address").addEventListener("click", function( event ) {
+  geocode(platform);
+}, false);
 
 let geocode = (platform) => {
     let address = $('#address').val();

@@ -1,0 +1,41 @@
+<form id="formExemplo" data-toggle="validator" role="form">	  <div class="form-group">	    <label for="textNome" class="control-label">Nome</label>	    <input id="textNome" class="form-control" placeholder="Digite seu Nome..." type="text">	  </div>	  	  <div class="form-group">	    <label for="inputEmail" class="control-label">Email</label>	    <input id="inputEmail" class="form-control" placeholder="Digite seu E-mail" type="email">	  </div>	  	  <div class="form-group">	    <label for="inputPassword" class="control-label">Senha</label>	    <input type="password" class="form-control" id="inputPassword" placeholder="Digite sua Senha...">	  </div>	  	  <div class="form-group">	    <label for="inputConfirm" class="control-label">Confirme a Senha</label>	    <input type="password" class="form-control" id="inputConfirm" placeholder="Confirme sua Senha...">	  </div>	  	  <div class="checkbox">	    <label>	      <input type="checkbox"> Marque este item.	    </label>	  </div>	  	  <button type="submit" class="btn btn-primary">Enviar</button>	</form>
+
+
+<form id="register-form" action="" method="POST" name="formulario">
+        <div class="offset-md-2 card mt-1 bg-light mb-3" style="max-width: 25rem;"></div>
+          <h3 class="card-header">Registre-se</h3>
+          <div class="card-body">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Nome</span>
+              </div>
+              <input type="text" class="form-control" id="register-user-name" placeholder="Digite seu nome" required>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">E-mail</span>
+              </div>
+              <input type="email" class="form-control" id="register-user-email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div>
+              <p id="invalid-email" class="alert-invalid"></p>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Senha</span>
+              </div>
+              <input type="password" class="form-control" id="register-user-password" placeholder="Digite sua senha" required>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Confirmar Senha</span>
+              </div>
+              <input type="password" class="form-control" id="confirm-user-password" placeholder="Digite novamente sua senha" required>
+            </div>
+            <div>
+              <p id="invalid-email-password" class="alert-invalid"></p>
+            </div>
+            <button type="button" class="btn btn-block btn-login" id="register-button">Registrar</button>
+          </div>
+        </div>
+      </form>
