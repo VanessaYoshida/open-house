@@ -1,4 +1,3 @@
-
 const url = "https://places.cit.api.here.com/places/v1/browse?app_id=A0an0Cy4CF1jmmOCpGBb&app_code=wIc8MPsnN0Ujx0gceJFuSg";
 
 const templatePlaces = document.querySelector(".places");

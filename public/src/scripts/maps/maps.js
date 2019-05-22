@@ -11,65 +11,67 @@ let geocode = (platform) => {
         jsonattributes : 1
     };
     
-    geocoder.geocode(
-        geocodingParameters,
-        onSuccess,
-        onError
-        );   
-    }
+  geocoder.geocode(
+    geocodingParameters,
+    onSuccess,
+    onError
+  );
+}
     
-    let onSuccess = (result) => {
-        let locations = result.response.view[0].result;
-        addLocationsToMap(locations);
-        showPlaces(locations[0].location.displayPosition.latitude, locations[0].location.displayPosition.longitude);
-        let icon = new H.map.Icon('./assets/img/home.png');
-        window.marker = new H.map.Marker({ lat: locations[0].location.displayPosition.latitude, lng: locations[0].location.displayPosition.longitude }, { icon: icon });
-        map.addObject(marker); 
-    }
+function onSuccess(result) {
+  var locations = result.response.view[0].result;
+  addLocationsToMap(locations);
+  addLocationsToPanel(locations);
+  showPlaces(localStorage.getItem("latitude"), localStorage.getItem("longitude"));
+}
     
-    let onError = (error) => {
-        console.log(error);
-    }
+function onError(error) {
+  alert('Ooops!');
+}
     
-    let platform = new H.service.Platform({
-        app_id: 'A0an0Cy4CF1jmmOCpGBb',
-        app_code: 'wIc8MPsnN0Ujx0gceJFuSg',
-        useHTTPS: true,
-        useCIT: true
-    });
+var platform = new H.service.Platform({
+  app_id: 'A0an0Cy4CF1jmmOCpGBb',
+  app_code: 'wIc8MPsnN0Ujx0gceJFuSg',
+  useHTTPS: true,
+  useCIT: true
+});
     
-    let defaultLayers = platform.createDefaultLayers();
+var defaultLayers = platform.createDefaultLayers();
     
-    let map = new H.Map(document.getElementById('map'),
-    defaultLayers.normal.map,{
-        center: {lat: localStorage.getItem('latitude'), lng:localStorage.getItem('longitude')},
-        zoom: 14
-    });
     
-    let locationsContainer = document.getElementById('panel');
+// var map = new H.Map(document.getElementById('map'),
+// defaultLayers.normal.map,{
+//     center: {lat: -23.5505, lng: -46.6333},
+//     zoom: 14
+// });
     
-    let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
     
-    let ui = H.ui.UI.createDefault(map, defaultLayers);
+var map = new H.Map(document.getElementById('map'),
+  defaultLayers.normal.map,{
+    center: {lat: localStorage.getItem("latitude"), lng:localStorage.getItem("longitude")},
+    zoom: 14
+  });   
     
-    let icon = new H.map.Icon('./assets/img/home.png');
-    window.marker = new H.map.Marker({ lat: localStorage.getItem('latitude'), lng: localStorage.getItem('longitude') }, { icon: icon });
-    map.addObject(marker);
+var locationsContainer = document.getElementById('panel');
     
-    let bubble;
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
     
-    let openBubble = (position, text) => {
-        if(!bubble){
-            bubble =  new H.ui.InfoBubble(
-                position,
-                {content: text});
-                ui.addBubble(bubble);
-            } else {
-                bubble.setPosition(position);
-                bubble.setContent(text);
-                bubble.open();
-            }
-        }
+var ui = H.ui.UI.createDefault(map, defaultLayers);
+    
+var bubble;
+    
+function openBubble(position, text){
+  if(!bubble){
+    bubble = new H.ui.InfoBubble(
+      position,
+      {content: text});
+    ui.addBubble(bubble);
+  } else {
+    bubble.setPosition(position);
+    bubble.setContent(text);
+    bubble.open();
+  }
+}
         
         let addLocationsToPanel = (locations) => {
             let nodeOL = document.createElement('ul'),
@@ -135,13 +137,11 @@ let geocode = (platform) => {
                 map.setCenter(group.getBounds().getCenter());
             }
             
-            let database = firebase.database();
-            
-            $("#exit").click((event) => {
+            $("#exit").click(event => {
                 event.preventDefault();
                 firebase.auth().signOut().then(() =>{
                     window.location = 'index.html';
-                }).catch((error) => {
+                }).catch(error => {
                     alert("Erro: " + error);
                 });
             });
