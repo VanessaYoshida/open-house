@@ -17,11 +17,20 @@
 }
 
 .img-logo{
-    width: 40%; 
+    width: 38%; 
     height: 100%;
 }
 
 .title-principal{
     text-align: center;
+}
+
+.container-quadras{
+    text-align: center;
+    margin-top: 8%;
+}
+
+.nav-top{
+    text-align: right;
 }
 

@@ -136,5 +136,3 @@ $("#exit").click((event) => {
         alert("Erro: " + error);
     });
 });
-    
-    

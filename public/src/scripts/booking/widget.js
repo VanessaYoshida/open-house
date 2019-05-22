@@ -30,5 +30,10 @@ var widget = new SimplybookWidget ({
     "button_background_color":"#faeb19",
     "button_text_color":"#000000",
     "button_position":"right",
-    "button_position_offset":"55%"
+    "button_position_offset":"60%"
+});
+
+let btnBack = document.querySelector("#back");
+btnBack.addEventListener("click", () => {
+    window.location = 'places.html';
 });
