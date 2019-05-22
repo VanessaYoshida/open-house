@@ -126,24 +126,26 @@ let geocode = (platform) => {
             group.addObject(marker);
         }
         
-        group.addEventListener('tap', function (evt) {
-            map.setCenter(evt.target.getPosition());
-            openBubble(
-                evt.target.getPosition(), evt.target.label);
-            }, false);
-            
-            map.addObject(group);
-            map.setCenter(group.getBounds().getCenter());
+            group.addEventListener('tap', function (evt) {
+                map.setCenter(evt.target.getPosition());
+                openBubble(
+                    evt.target.getPosition(), evt.target.label);
+                }, false);
+                
+                map.addObject(group);
+                map.setCenter(group.getBounds().getCenter());
         }
-        
-        
-        // let database = firebase.database();
-        
-        // $("#exit").click(function (event) {
-        //     event.preventDefault();
-        //     firebase.auth().signOut().then(function () {
-        //         window.location = 'index.html';
-        //     }).catch(function (error) {
-        //         alert("Erro: " + error);
-        //     });
-        // });
+            
+//botao de logout
+let database = firebase.database();
+
+$("#exit").click(function (event) {
+    event.preventDefault();
+    firebase.auth().signOut().then(function () {
+      window.location = 'index.html';
+    }).catch(function (error) {
+      alert("Erro: " + error);
+    });
+  });
+}
+

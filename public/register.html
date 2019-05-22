@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./src/styles/main.css" />
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+  <title>LetsPlay</title>
+</head>
+
+<body>
+  <div class="container-flex vh-100">
+    <header class="row color-primary page-header">
+      <div class="col-12">
+      </div>
+    </header>    
+    <main class="row" class="box-register">
+
+      <form id="register-form" action="" method="POST" name="formulario">
+        <div class="offset-md-2 card mt-1 bg-light mb-3" style="max-width: 25rem;">
+          <h3 class="card-header">Registre-se</h3>
+          <div class="card-body">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Nome</span>
+              </div>
+              <input type="text" class="form-control" id="register-user-name" placeholder="Digite seu nome" required>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">E-mail</span>
+              </div>
+              <input type="email" class="form-control" id="register-user-email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div>
+              <p id="invalid-email" class="alert-invalid"></p>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Senha</span>
+              </div>
+              <input type="password" class="form-control" id="register-user-password" placeholder="Digite sua senha" required>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Confirmar Senha</span>
+              </div>
+              <input type="password" class="form-control" id="confirm-user-password" placeholder="Digite novamente sua senha" required>
+            </div>
+            <div>
+              <p id="invalid-email-password" class="alert-invalid"></p>
+            </div>
+            <button type="button" class="btn btn-block btn-login" id="register-button">Registrar</button>
+          </div>
+        </div>
+      </form>
+
+
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="./src/scripts/config/config.js"></script>
+  <script src="./src/scripts/login/login.js"></script>
+  <script src="./src/scripts/login/register.js"></script>
+  <script src="./src/scripts/login/google.js"></script>
+  <script src="./src/scripts/login/facebook.js"></script>
+</body>
+</html>
