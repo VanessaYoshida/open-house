@@ -137,7 +137,7 @@ let geocode = (platform) => {
         }
             
 //botao de logout
-let database = firebase.database();
+//let database = firebase.database();
 
 $("#exit").click(function (event) {
     event.preventDefault();
@@ -146,6 +146,6 @@ $("#exit").click(function (event) {
     }).catch(function (error) {
       alert("Erro: " + error);
     });
-  });
-}
+});
+
 
