@@ -29,7 +29,7 @@ Foi utilizado o Framework Bootstrap v4, foi consumido a API Here e foi utilizado
 
 
 ## Autoria
-O projeto foi desenvolvido por: **Amanda**, **Fabiane Albuquerque**, **Laiz Araújo**, **Maria Eduarda**, **Tatiane Tabata** e **Vanessa Yoshida**.
+O projeto foi desenvolvido por: **Amanda Gomes**, **Fabiane Albuquerque**, **Laiz Araújo**, **Maria Eduarda**, **Tatiane Tabata** e **Vanessa Yoshida**.
 
 
 ### Roadmap do projeto
@@ -73,7 +73,7 @@ Na entrevista realizada com usuários foi mostrado que gostariam de um app para 
 
 
 ## Protótipo
-![Link do Protótipo]()
+![Link do Protótipo](https://xd.adobe.com/view/a492e102-86c5-49ab-7b8f-bacf65139054-d2a3/?fullscreen)
 
 
 ### Testes de Usabilidade
