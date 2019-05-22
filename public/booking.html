@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,28 +14,26 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/styles/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700,800&display=swap" rel="stylesheet">
     <title>Agendamento</title>
 </head>
-
 <body>
-    <header class="row color-primary page-header">
-        <div class="col-12">
-            <div class="container">
-                <a class="navbar-brand" href="#">#PartiuJogar</a>
-            </div>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <button type="button" class="btn btn-dark btn-block nav-top" id="back">Voltar</button>
+        </nav>
+        <div class="col-xs-12 mt-3 mb-3 mx-5 top-red d-flex justify-content-center">
+            <img src="./assets/img/logo-preto.jpg" alt="logo" class="img-logo">
         </div>
     </header>
-    <main>
-        <h3 class="field-title">Quadra Area Sports</h3>
-        <h5><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                class="fas fa-star"></i><i class="far fa-star"></i></h5>
-        <!-- <div id="bookingjs"></div> -->
+    <main class= "container-quadras">
+        <h4 class="field-title">Quadra Area Sports</h4>
+        <h5><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></h5>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
     <script src="http://simplybook.me/v2/widget/widget.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
     <script src="./src/scripts/booking/widget.js"></script>
 </body>
-
 </html>

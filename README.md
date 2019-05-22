@@ -29,7 +29,7 @@ Foi utilizado o Framework Bootstrap v4, foi consumido a API Here e foi utilizado
 
 
 ## Autoria
-O projeto foi desenvolvido por: **Amanda**, **Fabiane Albuquerque**, **Laiz Araújo**, **Maria Eduarda**, **Tatiane Tabata** e **Vanessa Yoshida**.
+O projeto foi desenvolvido por: **Amanda Gomes**, **Fabiane Albuquerque**, **Laiz Araújo**, **Maria Eduarda**, **Tatiane Tabata** e **Vanessa Yoshida**.
 
 
 ### Roadmap do projeto
@@ -53,7 +53,7 @@ Para as quadras cadastradas será prestado serviço de divulgação com fotos da
 
 
 ### Histórias de usuário
-![Pesquisa](https://drive.google.com/file/d/1_itpfioPYtlCzApJET9rtqVor4NtMgkr/view?usp=sharing)
+[Pesquisa](https://drive.google.com/file/d/1_itpfioPYtlCzApJET9rtqVor4NtMgkr/view?usp=sharing)
 
 
 ### Concorrência
@@ -63,23 +63,24 @@ Para sites de busca foi encontrado o Guia Mais e Sampa Online porem eles não te
 
 ### Entrevistas com Usuários
 Na entrevista realizada com usuários foi mostrado que gostariam de um app para buscar quadras, ver o local com foto 360, saber as comodidades que tem no estabelecimento e poder agendar online.
-![Pesquisa](https://docs.google.com/forms/d/e/1FAIpQLSdNR0QVOVZQO2rQiDewZl7AqkBtdxUucZGncY8ZsVqKxOrDWQ/viewform)
-![Pesquisa](.assets/img/pesquisa1.jpeg)
-![Pesquisa](.assets/img/pesquisa2.jpeg)
+[Pesquisa](https://docs.google.com/forms/d/e/1FAIpQLSdNR0QVOVZQO2rQiDewZl7AqkBtdxUucZGncY8ZsVqKxOrDWQ/viewform)
+![Pesquisa](public/assets/img/pesquisa1.jpg)
+![Pesquisa](public/assets/img/pesquisa2.jpg)
 
 
 ### Personas
-![Link das Personas](https://docs.google.com/document/d/19DyEV91pZXRt7bac0e5ksczo1137NNXxZwSPdtOLdY8/edit)
+[Link das Personas](https://docs.google.com/document/d/19DyEV91pZXRt7bac0e5ksczo1137NNXxZwSPdtOLdY8/edit)
 
 
 ## Protótipo
-![Link do Protótipo]()
+[Link do Protótipo](https://xd.adobe.com/view/a492e102-86c5-49ab-7b8f-bacf65139054-d2a3/?fullscreen)
 
 
 ### Testes de Usabilidade
 Foi feito um protótipo de baixa fidelidade para a primeira versão do projeto e os testes de usuário deram como satisfatórios para pesquisar a quadra e agendar online.
+
 [Link do Teste de Usabilidade](https://xd.adobe.com/view/a492e102-86c5-49ab-7b8f-bacf65139054-d2a3/?fullscreen)
 
 
 ### Business Model Canvas
-![Business Mdel Canvas](https://canvanizer.com/canvas/wk5XSOxgCVI6F)
+[Business Model Canvas](https://canvanizer.com/canvas/wk5XSOxgCVI6F)
