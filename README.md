@@ -44,28 +44,29 @@ Para sites de busca foi encontrado o Guia Mais e Sampa Online porém eles não t
 
 ### Entrevistas com Usuários
 Na entrevista realizada com usuários foi mostrado que gostariam de um app para buscar quadras, ver o local com foto 360°, saber as comodidades que tem no estabelecimento e poder agendar online.
-![Pesquisa](https://docs.google.com/forms/d/e/1FAIpQLSdNR0QVOVZQO2rQiDewZl7AqkBtdxUucZGncY8ZsVqKxOrDWQ/viewform)
-![Pesquisa](images/pesquisa1.jpeg)
-![Pesquisa](images/pesquisa2.jpeg)
+[Pesquisa](https://docs.google.com/forms/d/e/1FAIpQLSdNR0QVOVZQO2rQiDewZl7AqkBtdxUucZGncY8ZsVqKxOrDWQ/viewform)
+
+![Gráfico 1](images/pesquisa1.jpeg)
+![Gráfico 2](images/pesquisa2.jpeg)
 
 
 
 ### Personas
-![Pesquisa](https://docs.google.com/document/d/19DyEV91pZXRt7bac0e5ksczo1137NNXxZwSPdtOLdY8/edit)
+[Personas](https://docs.google.com/document/d/19DyEV91pZXRt7bac0e5ksczo1137NNXxZwSPdtOLdY8/edit)
 
 
 
 ### Histórias de usuário
-![Pesquisa](https://drive.google.com/file/d/1_itpfioPYtlCzApJET9rtqVor4NtMgkr/view?usp=sharing)
+[Histórias de Usuário](https://drive.google.com/file/d/1_itpfioPYtlCzApJET9rtqVor4NtMgkr/view?usp=sharing)
 
 
 
 ### Testes de Usabilidade
 Após a eleboraçãp de rafes, rescunhos e protótipos em papel, foi feito um protótipo de alta fidelidade e os testes de usuário deram como satisfatórios para pesquisar a quadra, agendar online e fazer o pagamento.
-![Protótipo](https://xd.adobe.com/view/a492e102-86c5-49ab-7b8f-bacf65139054-d2a3/?fullscreen)
+[Protótipo](https://xd.adobe.com/view/a492e102-86c5-49ab-7b8f-bacf65139054-d2a3/?fullscreen)
 ![Video](video/video_prototipo_partiujogar)
 
 
 
 ### Business Model Canvas
-![Pesquisa](https://canvanizer.com/canvas/wk5XSOxgCVI6F)
+[BMC](https://canvanizer.com/canvas/wk5XSOxgCVI6F)
