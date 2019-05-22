@@ -1,0 +1,23 @@
+{
+  "name": "open-house",
+  "version": "1.0.0",
+  "description": "open house",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanessaYoshida/open-house.git"
+  },
+  "keywords": [
+    "quadra",
+    "futebol"
+  ],
+  "author": "squad 9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VanessaYoshida/open-house/issues"
+  },
+  "homepage": "https://github.com/VanessaYoshida/open-house#readme"
+}
