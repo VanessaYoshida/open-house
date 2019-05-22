@@ -50,10 +50,7 @@ var map = new H.Map(document.getElementById('map'),
   defaultLayers.normal.map,{
     center: {lat: localStorage.getItem("latitude"), lng:localStorage.getItem("longitude")},
     zoom: 14
-  });
-    
-    
-    
+  });   
     
 var locationsContainer = document.getElementById('panel');
     
@@ -141,8 +138,6 @@ function addLocationsToMap(locations){
   map.setCenter(group.getBounds().getCenter());
 }
             
-//botao de logout
-//let database = firebase.database();
 
 $("#exit").click(function (event) {
   event.preventDefault();
