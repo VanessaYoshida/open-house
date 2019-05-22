@@ -33,3 +33,9 @@
 .nav-top{
     text-align: right;
 }
+
+li{
+    margin: 2%;
+    color: #343a40;
+    list-style-type: none;
+}
