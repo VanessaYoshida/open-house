@@ -152,4 +152,3 @@ $("#exit").click(function (event) {
     alert("Erro: " + error);
   });
 });
-
