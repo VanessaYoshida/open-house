@@ -3,7 +3,7 @@
 }
 
 .carousel-custom img {
-    opacity: .8;
+    opacity: .5;
 }
 
 .map {
@@ -13,7 +13,7 @@
 }
 
 .panel {
-    width: 600px;
+    width: auto;
 }
 
 .img-logo{
@@ -34,11 +34,9 @@
     text-align: right;
 }
 
-<<<<<<< HEAD
 li{
     margin: 2%;
     color: #343a40;
     list-style-type: none;
+    width: 100%; 
 }
-=======
->>>>>>> e334e72ecbbc04bfb141e308845414ef6abc2048
