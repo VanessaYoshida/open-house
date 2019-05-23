@@ -131,44 +131,7 @@ let geocode = (platform) => {
           evt.target.getPosition(), evt.target.label);
         }, false);
         
-<<<<<<< HEAD
         map.addObject(group);
         map.setCenter(group.getBounds().getCenter());
       }
-      
-      
-      $("#exit").click(event => {
-        event.preventDefault();
-        firebase.auth().signOut().then(() =>{
-          window.location = 'index.html';
-        }).catch(error => {
-          alert("Erro: " + error);
-        });
-      });
-=======
-        let addLocationsToMap = (locations) => {
-            let group = new  H.map.Group(),
-            position,
-            i;
-            
-            for (i = 0;  i < locations.length; i += 1) {
-                position = {
-                    lat: locations[i].location.displayPosition.latitude,
-                    lng: locations[i].location.displayPosition.longitude
-                };
-                marker = new H.map.Marker(position);
-                marker.label = locations[i].location.address.label;
-                group.addObject(marker);
-            }
-            
-            group.addEventListener('tap', function (evt) {
-                map.setCenter(evt.target.getPosition());
-                openBubble(
-                    evt.target.getPosition(), evt.target.label);
-                }, false);
-                
-                map.addObject(group);
-                map.setCenter(group.getBounds().getCenter());
-            }
           
->>>>>>> login-duda
