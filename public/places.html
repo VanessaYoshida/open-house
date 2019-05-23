@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -10,18 +11,22 @@
     <link rel="stylesheet" href="./src/styles/li.css" />
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-places.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -39,43 +44,51 @@
                 </li>
             </ul>
         </div>
-    </div>
-</nav>
-<main>
-    <div class="col-xs-12 mt-3 mb-3 mx-5 top-red d-flex justify-content-center">
-        <img src="./assets/img/logo-preto.jpg" alt="logo" class="img-logo">
-    </div>
-    <h3 class="title-principal field-title">Encontre as Quadras Esportivas mais proximas de você</h3>
-    <p id="demo"></p>
-    <label>Digite o endereço da sua localizacao:</label>
-    <input type="text" id="address"  class="form-control" placeholder="Ex: Alameda Santos, 2356, Centro, São Paulo - SP, 01419-002 ">
-    <button type="submit" class="btn btn-dark btn-block my-3 " id="send-address">Buscar</button>
-    <div id="map" class="map"></div>
-    <div id="panel" class="panel"></div>
-    <div id="results-places">
-        <ul class="places"></ul>
-    </div>
-</main>
-<footer>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="favorites.html">
-            <i class="far fa-star" >Favoritas</i>
-        </a>
-        <a class="navbar-brand" href="#">
-            <i class="far fa-calendar-check">Agendamentos</i>
-        </a>
-        <button id= "exit" class= "btn btn-dark btn-logout">Sair</button>
+        </div>
     </nav>
-</footer>
+    <main>
+        <div class="col-xs-12 mt-3 mb-3 mx-5 top-red d-flex justify-content-center">
+            <img src="./assets/img/logo-preto.jpg" alt="logo" class="img-logo">
+        </div>
+        <h3 class="title-principal field-title">Encontre as Quadras Esportivas mais proximas de você</h3>
+        <p id="demo"></p>
+        <label>Digite o endereço da sua localizacao:</label>
+        <input type="text" id="address" class="form-control"
+            placeholder="Ex: Alameda Santos, 2356, Centro, São Paulo - SP, 01419-002 ">
+        <button type="submit" class="btn btn-dark btn-block my-3 " id="send-address">Buscar</button>
+        <div id="map" class="map"></div>
+        <div id="panel" class="panel"></div>
+        <div id="results-places">
+            <ul class="places"></ul>
+        </div>
+    </main>
+    <footer>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="favorites.html">
+                <i class="far fa-star">Favoritas</i>
+            </a>
+            <a class="navbar-brand" href="#">
+                <i class="far fa-calendar-check">Agendamentos</i>
+            </a>
+            <button id="exit" class="btn btn-dark btn-logout">Sair</button>
+        </nav>
+    </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
-<script src="./src/scripts/config/config.js"></script>
-<script type="text/javascript" src='./src/scripts/login/login.js'></script>
-<script type="text/javascript" src='./src/scripts/maps/maps.js'></script>
-<script type="text/javascript" src='./src/scripts/maps/myLocation.js'></script>
-<script type="text/javascript" src='./src/scripts/maps/findCourts.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./src/scripts/config/config.js"></script>
+    <script type="text/javascript" src='./src/scripts/login/login.js'></script>
+    <script type="text/javascript" src='./src/scripts/maps/maps.js'></script>
+    <script type="text/javascript" src='./src/scripts/maps/myLocation.js'></script>
+    <script type="text/javascript" src='./src/scripts/maps/findCourts.js'></script>
 
 </body>
+
 </html>
