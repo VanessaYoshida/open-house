@@ -32,8 +32,3 @@ var widget = new SimplybookWidget ({
     "button_position":"right",
     "button_position_offset":"60%"
 });
-
-let btnBack = document.querySelector("#back");
-btnBack.addEventListener("click", () => {
-    window.location = 'places.html';
-});
