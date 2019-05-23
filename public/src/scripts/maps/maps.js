@@ -136,12 +136,4 @@ function openBubble(position, text){
                 map.addObject(group);
                 map.setCenter(group.getBounds().getCenter());
             }
-            
-            $("#exit").click(event => {
-                event.preventDefault();
-                firebase.auth().signOut().then(() =>{
-                    window.location = 'index.html';
-                }).catch(error => {
-                    alert("Erro: " + error);
-                });
-            });
+          

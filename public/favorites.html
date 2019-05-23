@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Favoritos</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <button type="button" class="btn btn-dark btn-block nav-top" id="back">Voltar</button>
+        </nav>
+        <div class="col-xs-12 mt-3 mb-3 mx-5 top-red d-flex justify-content-center">
+            <img src="./assets/img/logo-preto.jpg" alt="logo" class="img-logo">
+        </div>
+    </header>
+    <main>
+        <section id="favorite1">
+            <h5 class="field-title bold-text title-principal">Quadras Favoritas</h5>
+            <div class="info-column favorites-info">
+                <a class="info-title" href="booking.html">Quadra Area Sports</a>
+                <h6 class="favorite-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></h6>
+                <ul>
+                    <li class="li-favorites">R$60,00/h</li>
+                    <li class="li-favorites"><i class="fas fa-map-marker-alt"></i> 0,80 km</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-style">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="favorites.html">
+                <i class="far fa-star">Favoritas</i>
+            </a>
+            <a class="navbar-brand" href="#">
+                <i class="far fa-calendar-check">Agendamentos</i>
+            </a>
+            <button id="exit" class="btn btn-dark btn-logout">Sair</button>
+        </nav>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="./src/scripts/config/config.js"></script>
+    <script src='./src/scripts/login/login.js'></script>
 </body>
+
 </html>
