@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/VanessaYoshida/open-house/issues"
   },
-  "homepage": "https://github.com/VanessaYoshida/open-house#readme"
+  "homepage": "https://github.com/VanessaYoshida/open-house#readme",
+  "dependencies": {
+    "eslint": "^5.16.0"
+  }
 }
