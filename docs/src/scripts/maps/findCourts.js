@@ -18,7 +18,7 @@ const showPlaces = (latitude, longitude) => {
         templatePlaces.appendChild(li);
         window.marker = new H.map.Marker({ lat: item.position[0],
           lng: item.position[1] });
-        map.addObject(marker);
+        window.map.addObject(marker);
       });
     })    
     .catch(() => {
