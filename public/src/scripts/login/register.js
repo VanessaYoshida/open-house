@@ -28,8 +28,7 @@ function registerUser(event) {
     alert('Senhas digitadas não correspondem entre si. Digite novamente.');
   }
 }
-
-let btnBack = document.querySelector("#back-register");
-btnBack.addEventListener("click", () => {
-    window.location = 'index.html';
+let btnBack = document.querySelector('#back-register');
+btnBack.addEventListener('click', () => {
+  window.location = 'index.html';
 });
