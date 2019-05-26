@@ -8,14 +8,14 @@ const showPlaces = (latitude, longitude) => {
     .then(response => response.json())
     .then(response => {
       response.results.items.forEach(item => {
-        const li = document.createElement('li');
-        li.innerHTML = `
+        $(".places").prepend(`
+          <li class='li-favorites'>
             <br>
             <strong>Local: ${item.title}</strong><br>
             Endereço: ${item.vicinity.stripHTML()}<br>
             Distância: ${item.distance / 1000} km
-            `;
-        templatePlaces.appendChild(li);
+          </li>
+          `);
         window.marker = new H.map.Marker({ lat: item.position[0],
           lng: item.position[1] });
         window.map.addObject(marker);

@@ -12,12 +12,12 @@ const getLocation = () => {
 const showPosition = (position) => {
   localStorage.setItem('latitude', position.coords.latitude);
   localStorage.setItem('longitude', position.coords.longitude);
-  carregarMapa();
+  uploadMap();
 };
 const error = (error) => {
   if (error.code == error.PERMISSION_DENIED) {
     localStorage.setItem('latitude', -23.5507);
     localStorage.setItem('longitude', -46.6333);
-    carregarMapa();
+    uploadMap();
   }
 }

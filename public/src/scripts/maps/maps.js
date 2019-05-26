@@ -1,5 +1,5 @@
 
-let carregarMapa = () => {
+let uploadMap = () => {
 
   document.getElementById("send-address").addEventListener("click", function (event) {
     geocode(platform);
