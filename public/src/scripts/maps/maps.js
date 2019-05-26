@@ -1,7 +1,10 @@
 
-let uploadMap = () => {
+let loadMap = () => {
 
   document.getElementById("send-address").addEventListener("click", function (event) {
+    for (let obj of window.map.getObjects() )  {
+      window.map.removeObject(obj);
+    }
     geocode(platform);
   }, false);
 

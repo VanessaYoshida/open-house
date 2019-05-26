@@ -4,6 +4,7 @@ String.prototype.stripHTML = function() {
   return this.replace(/<.*?>/g, ' - ');
 };
 const showPlaces = (latitude, longitude) => {
+  $(".places").empty();
   fetch(`${url}&in=${latitude},${longitude};r=5000&q=futebol&pretty`)
     .then(response => response.json())
     .then(response => {
