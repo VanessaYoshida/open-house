@@ -68,3 +68,7 @@ Clique aqui para interagir com nosso [Protótipo](https://xd.adobe.com/view/a492
 Para esse projeto, seguimos o Business Model Canvas, pois ele mostra a visão de negócio de um modo mais simplificado, tornando fácil sua compreensão.  
 
 ![BMC](images/bmc.png)
+
+
+## Foto do App
+![Foto Página Principal](images/open-house.png)
