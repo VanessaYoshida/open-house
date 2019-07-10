@@ -1,6 +1,6 @@
 # Projeto Open House
 ## App de Busca de Quadras Esportivas #PartiuJogar
-
+O objetivo desde projeto era consumir uma API Rest. Escolhemos a API de Geocodificação da Here.
 
 ## Descrição da Aplicação
 * Criar um produto de entretenimento utilizando APIs externas.
